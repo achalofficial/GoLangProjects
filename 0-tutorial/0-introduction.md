@@ -70,3 +70,24 @@
 ##### Rune in short 
     >   var myRune rune = 'a' 
     >   fmt.Println(myRune) >>> 97
+
+##### Bool in GoLang
+    >   the bool are either true or false
+    >   the default for bool is 'false'
+
+### New Way to declear the variables in GoLang
+    >   instead of 
+            var myVar string = 'test'
+        we can write 
+            var myVar = 'text' >>> Here the type of the variable is inferred.
+        we can also do as 
+            myVar := 'test'
+##### Declearing multiple variables
+    >   var var1, var2 int = 1, 2
+            OR
+    >   var var1, var2 = 1, 2
+            OR
+    >   var1, var2 := 1, 2
+
+## Constants in GoLang
+    
