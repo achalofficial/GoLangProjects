@@ -36,8 +36,8 @@
 
 ## Data Type in GoLang
     1.  const       : 
-    2.  variable    :   
-    3.  bool        :
+    2.  variable    :   use var keyword for declaraing an variable. Every variable we need to define the type
+    3.  bool        :   
     4.  float32     :
     5.  float64     :
     6.  int         :
@@ -51,3 +51,22 @@
     14. uint16      :
     15. uint32      :
     16. uint64      :
+
+    >   We can't perform opertions between two different type of variable like int and float type variable can't be added.
+    >   We need to cast the variable in same type before performing the Ops.
+
+### String 
+    >   "" for single line strings 
+    >   `` for multiple line string
+
+#### Operations on string 
+##### Length of the string 
+    >   var myVar string = "test"
+    >   fmt.Println(len(myVar)); // Output is 4
+        >   This is not the length but the number of bytes taken by memory
+    >   For finding the length of the string 
+        >   import "unicode/utf8" // in-built package 
+        >   fmt.Println(utf8.RuneCountInString('text-literal')) --> This is return the number of characters in the string
+##### Rune in short 
+    >   var myRune rune = 'a' 
+    >   fmt.Println(myRune) >>> 97
